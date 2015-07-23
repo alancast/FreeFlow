@@ -33,14 +33,31 @@
                                     <rect key="frame" x="99" y="214" width="45" height="21"/>
                                 </variation>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWo-2O-aWt">
+                            <pickerView contentMode="scaleToFill" restorationIdentifier="order_types" translatesAutoresizingMaskIntoConstraints="NO" id="uWo-2O-aWt">
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="173" width="400" height="33"/>
+                                    <rect key="frame" x="0.0" y="86" width="400" height="149"/>
                                 </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="kh9-bI-dsS" id="mZ7-rg-IIu"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="P3c-lx-EAg"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="RHQ-Aq-DDV"/>
                                 </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" restorationIdentifier="price_types" translatesAutoresizingMaskIntoConstraints="NO" id="LQL-Zp-LUI">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="260" width="400" height="162"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="4Bx-5b-NeS"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="QJ5-G5-ZjO"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" restorationIdentifier="order_qualifier" translatesAutoresizingMaskIntoConstraints="NO" id="oUc-MV-pNK">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="408" width="400" height="162"/>
+                                </variation>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -49,6 +66,8 @@
                                 <exclude reference="IJd-47-Hxs"/>
                                 <exclude reference="8NF-sf-wm2"/>
                                 <exclude reference="uWo-2O-aWt"/>
+                                <exclude reference="LQL-Zp-LUI"/>
+                                <exclude reference="oUc-MV-pNK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -56,6 +75,8 @@
                                 <include reference="IJd-47-Hxs"/>
                                 <include reference="8NF-sf-wm2"/>
                                 <include reference="uWo-2O-aWt"/>
+                                <include reference="LQL-Zp-LUI"/>
+                                <include reference="oUc-MV-pNK"/>
                             </mask>
                         </variation>
                     </view>
