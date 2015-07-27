@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sheriff</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="order_types">
+        <item>Buy Limit</item>
+        <item>Buy Market</item>
+        <item>Sell Limit</item>
+        <item>Sell Market</item>
+    </string-array>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_equity">EquityActivity</string>
+</resources>
